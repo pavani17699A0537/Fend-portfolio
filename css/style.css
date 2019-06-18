@@ -1,0 +1,158 @@
+      /* parent class */
+      .parent {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        border: 1px solid #ddd;
+        box-shadow: 3px 3px 30px;
+        justify-content: space-around;
+        margin: 1% auto;
+      }
+
+      /* child1 class */
+      .childm {
+        width: 60%;
+      }
+
+      .childm img {
+        width: 30%;
+      }
+
+      /* child2 class */
+      .childp {
+        width: 40%;
+        text-align: right;
+        margin-right: 2%;
+        color: #45008a;
+      }
+
+      /* banner */
+      .banner {
+        width: 85%;
+        margin: 1% auto;
+      }
+
+      .banner img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* cards*/
+      .childn {
+        width: 23%;
+        margin: 1%;
+        text-align: center;
+        border: 2px solid #ddd;
+        border-radius: 5%;
+      }
+
+      .childn img {
+        width: 100%;
+        border-radius: 10%;
+        border: 5px solid #ddd;
+      }
+
+      .childn h2 {
+        text-align: center;
+        border: 6px solid #ddd;
+      }
+
+      /* animations for cards */
+      .childn img:hover {
+        transform: scale(1.5);
+        transform: scale(1.5);
+        transform: scale(0.9);
+      }
+
+      .childn img {
+        background-color: #fff;
+        transition: transform .2s;
+        width: 85%;
+        /* height: 100px; */
+        margin: 0% auto;
+      }
+
+      /* anchor tag */
+      a {
+        text-decoration: none;
+        background: #000;
+        color: #fff;
+        display: block;
+      }
+
+      /* footer */
+      footer {
+        background-color: #ddd;
+        height: auto;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* media queries for mobile view */
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        .parent {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 90%;
+          border: 1px solid #ddd;
+          margin: 1% auto;
+          box-shadow: 3px 3px 30px #000;
+        }
+
+        .childm {
+          width: 90%;
+          text-align: center;
+        }
+
+        .childp {
+          width: 90%;
+          text-align: center;
+        }
+
+        .childn {
+          width: 100%;
+        }
+
+        .banner {
+          height: 100px;
+          width: 90%;
+        }
+
+        .banner img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      /* media queries  FOR tab view*/
+      @media only screen and (min-width: 767px) and (max-width: 1023px) {
+        .parent {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 90%;
+          border: 1px solid #ddd;
+          margin: 1% auto;
+          justify-content: space-around;
+          box-shadow: 3px 3px 30px #000;
+        }
+
+        .childm {
+          width: 90%;
+          text-align: center;
+        }
+
+        .childm img {
+          width: 30%;
+        }
+
+        .childp {
+          width: 100%;
+          text-align: center;
+        }
+
+        .childn {
+          width: 45%;
+        }
+      }
